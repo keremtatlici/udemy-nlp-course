@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red31\green31\blue31;\red239\green239\blue239;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Variable             Type       Description\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 --------------------------------------------\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Username             (string) - Twitter user's username\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 User_id              (string) - Twitter user's user_id\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Search               (string) - Search terms\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Geo                  (string) - Geo coordinates (lat,lon,km/mi.)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Location             (bool)   - Set to True to attempt to grab a Twitter user's location (slow).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Near                 (string) - Near a certain City (Example: london)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Lang                 (string) - Compatible language codes: https://github.com/twintproject/twint/wiki/Langauge-codes\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Output               (string) - Name of the output file.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Elasticsearch        (string) - Elasticsearch instance\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Timedelta            (int)    - Time interval for every request (days)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Year                 (string) - Filter Tweets before the specified year.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Since                (string) - Filter Tweets sent since date (Example: 2017-12-27).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Until                (string) - Filter Tweets sent until date (Example: 2017-12-27).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Email                (bool)   - Set to True to show Tweets that _might_ contain emails.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Phone                (bool)   - Set to True to show Tweets that _might_ contain phone numbers.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Verified             (bool)   - Set to True to only show Tweets by _verified_ users\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Store_csv            (bool)   - Set to True to write as a csv file.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Store_json           (bool)   - Set to True to write as a json file.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Custom               (dict)   - Custom csv/json formatting (see below).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Show_hashtags        (bool)   - Set to True to show hashtags in the terminal output.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Limit                (int)    - Number of Tweets to pull (Increments of 20).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Count                (bool)   - Count the total number of Tweets fetched.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Stats                (bool)   - Set to True to show Tweet stats in the terminal output.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Database             (string) - Store Tweets in a sqlite3 database. Set this to the DB. (Example: twitter.db)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 To                   (string) - Display Tweets tweeted _to_ the specified user.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 All                  (string) - Display all Tweets associated with the mentioned user.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Debug                (bool)   - Store information in debug logs.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Format               (string) - Custom terminal output formatting.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Essid                (string) - Elasticsearch session ID.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 User_full            (bool)   - Set to True to display full user information. By default, only usernames are shown.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Profile_full         (bool)   - Set to True to use a slow, but effective method to enumerate a user's Timeline.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Store_object         (bool)   - Store tweets/user infos/usernames in JSON objects.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Store_pandas         (bool)   - Save Tweets in a DataFrame (Pandas) file.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pandas_type          (string) - Specify HDF5 or Pickle (HDF5 as default).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pandas               (bool)   - Enable Pandas integration.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Index_tweets         (string) - Custom Elasticsearch Index name for Tweets (default: twinttweets).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Index_follow         (string) - Custom Elasticsearch Index name for Follows (default: twintgraph).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Index_users          (string) - Custom Elasticsearch Index name for Users (default: twintuser).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Index_type           (string) - Custom Elasticsearch Document type (default: items).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Retries_count        (int)    - Number of retries of requests (default: 10).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Resume               (int)    - Resume from a specific tweet id (**currently broken, January 11, 2019**).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Images               (bool)   - Display only Tweets with images.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Videos               (bool)   - Display only Tweets with videos.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Media                (bool)   - Display Tweets with only images or videos.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Replies              (bool)   - Display replies to a subject.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pandas_clean         (bool)   - Automatically clean Pandas dataframe at every scrape.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Lowercase            (bool)   - Automatically convert uppercases in lowercases.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pandas_au            (bool)   - Automatically update the Pandas dataframe at every scrape.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Proxy_host           (string) - Proxy hostname or IP.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Proxy_port           (int)    - Proxy port.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Proxy_type           (string) - Proxy type.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Tor_control_port     (int) - Tor control port.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Tor_control_password (string) - Tor control password (not hashed).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Retweets             (bool)   - Display replies to a subject.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Hide_output          (bool)   - Hide output.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Get_replies          (bool)   - All replies to the tweet.}
