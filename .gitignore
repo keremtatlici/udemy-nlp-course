@@ -1,3 +1,4 @@
 saved_models/twittersentiment.model
 datasets/testdata.manual.2009.06.14.csv
 datasets/training.1600000.processed.noemoticon.csv
+saved_models/GoogleNews-vectors-negative300.bin.gz
